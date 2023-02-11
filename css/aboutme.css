@@ -1,0 +1,93 @@
+.about {
+    height: 100vh;
+    background-color: linear-gradient(rgb(0, 177, 237), var(--blue));
+    background: linear-gradient(30deg, rgb(0, 177, 237), var(--blue));
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 3em 0 3em;
+}
+
+.about h2 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5em;
+    align-self: center;
+    justify-self: center;
+}
+
+.background-history {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.background-history span {
+    height: 90%;
+    flex-grow: 1;
+    font-size: 2.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.background-history li {
+    list-style: none;
+    /* padding-top: 0.8rem; */
+}
+
+@media (max-width: 1000px) {
+    .background-history span {
+        font-size: 2.5vw;
+    }
+    
+    .about h2 {
+        font-size: 3.3vw;
+    }
+    .about {
+        padding: 2em 3em 2em 3em;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .background-history span {
+        font-size: 2.8vw;
+    }
+    .about h2 {
+        font-size: 3.6vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .background-history span {
+        font-size: 3.3vw;
+    }
+    .about h2 {
+        font-size: 4.1vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .background-history span {
+        font-size: 3.6vw;
+    }
+
+    .about h2 {
+        font-size: 4.4vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .background-history span {
+        font-size: 4vw;
+    }
+
+    .about h2 {
+        font-size: 4.8vw;
+    }
+}
